@@ -1,0 +1,22 @@
+{
+   "content_scripts": [ {
+      "css": [ "print.css" ],
+      "js": [ "content.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*.atlassian.net/*", "https://*.atlassian.net/*", "\u003Call_urls>" ]
+   } ],
+   "description": "change JIRA Agile card style for print",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "48": "icon-48.png"
+   },
+   "manifest_version": 2,
+   "name": "JIRA Print Agile Cards",
+   "page_action": {
+      "default_icon": "icon.png",
+      "default_title": "JIRA Print Agile Cards"
+   },
+   "permissions": [ "declarativeContent", "fontSettings", "storage" ],
+   "version": "1.0.0"
+}
